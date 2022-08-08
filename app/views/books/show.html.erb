@@ -1,1 +1,9 @@
 <h1> Listado de libros </h1>
+<% @libros.each do |libro| %>
+    <div>
+        <h2>Nombre: <%= libro.titulo %></h2>
+        <h3>Autor: <%= libro.autor %></h3>
+        <h3>Año de publicación: <%= libro.ano_publicacion %></h3>
+        <p>Epilogo: <%= libro.epilogo %></p>
+    </div>
+<% end %>
